@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Responsive card</title>
+        <style>
+            /* CSS styles */
+               body{
+                margin: 0;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: #f1f1f1;
+            
+            }
+            .card-container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            
+            }
+            .card{
+                width: 300px;
+                height: 300px;
+                background-color: #ffffff;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+            }
+            .card-title{
+                font-size: 24px;
+                margin-bottom: 10px;
+            
+            }
+            .card-image{
+                width: 150px;
+                height: 150px;
+                margin-bottom: 10px; 
+   border: 3px solid white; 
+   border-radius: 50px;
+padding: 5px;
+
+            }
+            .card-content{
+                font-size: 16px;
+                color: #777777;
+            
+            }
+             @media (max-width: 768px){
+                .card{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card-container">
+       <div class="card">
+            <h2 class="card-title">Card 1</h2>
+<img class="card-image" src="images/flowers.jpg" alt="Card 1">
+<p class="card-content">Nature is a wondrous and diverse realm that encompasses the flora, fauna, and landscapes that surround us.Nature is a sanctuary that offers respite from the chaos of daily life. It invites us to explore its hidden trails and bask in the serenity of its lakes and waterfalls. It teaches us about harmony, resilience, and interconnectedness.</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Card 2</h2>
+<img class="card-image" src="images/landscape.jpg" alt="Card 2">
+<p class="card-content">Nature, in all its grandeur, paints the world with vibrant hues. Lush forests, home to towering trees, create canopies that provide shelter for countless creatures. Birds take flight, their melodious songs filling the air, while butterflies flutter gracefully from flower to flower.</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Card 3</h2>
+<img class="card-image" src="images/flower.jpg" alt="Card 3" width="20">
+<p class="card-content">Rivers and streams meander through valleys, their clear waters teeming with life. Fish swim gracefully beneath the surface, while otters playfully frolic along the banks. Majestic mountains rise to touch the skies, their snow-capped peaks standing as sentinels of awe-inspiring beauty.</p>
+        </div>
+    </div>
+    </body>
+</html>
